@@ -1,4 +1,6 @@
-<?php namespace Modules\Dashboard\Providers;
+<?php
+
+namespace Modules\Dashboard\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Modules\Dashboard\Entities\Widget;
@@ -42,6 +44,6 @@ class DashboardServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array();
+        return [];
     }
 }
