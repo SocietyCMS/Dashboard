@@ -40,7 +40,7 @@ class SidebarExtender implements \Maatwebsite\Sidebar\SidebarExtender
                 $item->route('dashboard.index');
                 $item->isActiveWhen(route('dashboard.index', null, false));
                 $item->authorize(
-                    $this->auth->hasAccess('dashboard.index')
+                    $this->auth->hasAccess('dashboard.dashboard.index')
                 );
             });
         });
