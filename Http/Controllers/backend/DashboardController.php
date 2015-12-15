@@ -28,8 +28,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $groupedActivities = $this->activityRepository->latestGroupedByDate();
+        $activities = $this->activityRepository->latestGroupedByDate();
 
-        return view('dashboard::backend.dashboard', compact('groupedActivities'));
+        return view('dashboard::backend.dashboard', compact('activities'));
     }
 }
