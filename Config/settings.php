@@ -1,14 +1,26 @@
 <?php
 
 return [
-    'welcome-message'  => [
-        'title'   => 'dashboard::settings.welcome-message',
-        'view'    => 'text',
-        'default' => 'dashboard::dashboard.welcome.title',
+
+    'Landingpage' => [
+
     ],
-    'welcome-subtitle' => [
-        'title'   => 'dashboard::settings.welcome-subtitle',
-        'view'    => 'text',
-        'default' => 'dashboard::dashboard.welcome.subtitle',
+
+    'Dashboard' => [
+
+        'welcome-message'  => [
+            'title'       => 'dashboard::settings.welcome-message.title',
+            'description' => 'dashboard::settings.welcome-message.description',
+            'view'        => 'text',
+            'default'     => 'dashboard::dashboard.welcome.title',
+        ],
+        'welcome-subtitle' => [
+            'title'       => 'dashboard::settings.welcome-subtitle.title',
+            'description' => 'dashboard::settings.welcome-subtitle.description',
+            'view'        => 'text',
+            'default'     => 'dashboard::dashboard.welcome.subtitle',
+        ],
+
     ],
+
 ];
