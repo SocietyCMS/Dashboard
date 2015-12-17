@@ -7,7 +7,7 @@ return [
 
         'use-static-landingpage'  => [
             'title'       => 'Use a static Landing-Page',
-            'description' => 'The static landing-page is located in the current theme folder -> views -> home.blade.php ',
+            'description' => 'The static landing-page is located in the current theme folder -> views -> static-landing.blade.php ',
         ],
     ],
 

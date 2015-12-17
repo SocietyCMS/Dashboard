@@ -15,8 +15,9 @@ class PublicController extends PublicBaseController
     {
         if(Settings::get('dashboard::use-static-landingpage'))
         {
-            return view('home');
+            return view('static-landing');
         };
-        return "Dynamic Landingpage";
+
+        return view('dynamic-landing');
     }
 }

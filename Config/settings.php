@@ -8,7 +8,7 @@ return [
             'description' => 'dashboard::settings.landingpage.use-static-landingpage.description',
             'type'        => 'boolean',
             'view'        => 'checkbox',
-            'default'     => true,
+            'default'     => false,
         ]
     ],
 
