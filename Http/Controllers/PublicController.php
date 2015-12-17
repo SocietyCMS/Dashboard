@@ -13,11 +13,10 @@ class PublicController extends PublicBaseController
      */
     public function index()
     {
-        dd(Settings::get('dashboard::use-static-landingpage'));
         if(Settings::get('dashboard::use-static-landingpage'))
         {
             return view('home');
         };
-
+        return "Dynamic Landingpage";
     }
 }
