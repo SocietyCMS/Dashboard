@@ -2,13 +2,13 @@
 
 namespace Modules\Dashboard\Http\Controllers\backend;
 
+use Modules\Core\Http\Controllers\AdminBaseController;
 use Modules\User\Repositories\Eloquent\ActivityRepository;
-use Pingpong\Modules\Routing\Controller;
 
 /**
  * Class DashboardController.
  */
-class DashboardController extends Controller
+class DashboardController extends AdminBaseController
 {
     /**
      * @var ActivityRepository
