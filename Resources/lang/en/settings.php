@@ -5,9 +5,17 @@ return [
     'landingpage' => [
         'title' => 'Landingpage',
 
-        'use-static-landingpage'  => [
-            'title'       => 'Use a static Landing-Page',
-            'description' => 'The static landing-page is located in the current theme folder -> views -> static-landing.blade.php ',
+        'landingpage-type' => [
+            'title' => 'Specify the type of the Landingpage',
+
+            'use-dynamic-landingpage' => 'dynamic Landing-Page',
+            'use-static-landingpage'  => 'static Landing-Page',
+            'use-url'                 => 'url redirect',
+        ],
+
+        'landingpage-url' => [
+            'title'       => 'Landingpage URL',
+            'description' => 'All requests to the homepage will be redirected to this url. Only active when langingpage type is set to "url redirect"',
         ],
     ],
 
@@ -19,7 +27,7 @@ return [
             'description' => 'The BIG text message on the Dashboard',
         ],
         'welcome-subtitle' => [
-            'title' => 'Welcome Subtitle',
+            'title'       => 'Welcome Subtitle',
             'description' => 'The not-so-big text message on the Dashboard',
         ],
     ],

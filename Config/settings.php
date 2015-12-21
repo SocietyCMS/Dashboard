@@ -3,13 +3,22 @@
 return [
 
     'dashboard::settings.landingpage.title' => [
-        'use-static-landingpage' => [
-            'title'       => 'dashboard::settings.landingpage.use-static-landingpage.title',
-            'description' => 'dashboard::settings.landingpage.use-static-landingpage.description',
-            'type'        => 'boolean',
-            'view'        => 'checkbox',
-            'default'     => false,
-        ]
+        'landingpage-type' => [
+            'title'       => 'dashboard::settings.landingpage.landingpage-type.title',
+            'view'        => 'radio',
+            'options'     => [
+                'dynamic' => 'dashboard::settings.landingpage.landingpage-type.use-dynamic-landingpage',
+                'static' => 'dashboard::settings.landingpage.landingpage-type.use-static-landingpage',
+                'url' => 'dashboard::settings.landingpage.landingpage-type.use-url'
+            ],
+            'default'     => 'static',
+        ],
+
+        'landingpage-url'  => [
+            'title'       => 'dashboard::settings.landingpage.landingpage-url.title',
+            'description' => 'dashboard::settings.landingpage.landingpage-url.description',
+            'view'        => 'text',
+        ],
     ],
 
     'dashboard::settings.dashboard.title' => [
