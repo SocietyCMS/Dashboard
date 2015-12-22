@@ -17,7 +17,7 @@ class PublicController extends PublicBaseController
             case 'dynamic':
                 return view('dynamic-landing');
             case 'static':
-
+                return view('static-landing');
             case 'url':
                 return redirect(Settings::get('dashboard::landingpage-url'));
         }
