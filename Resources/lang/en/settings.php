@@ -10,12 +10,6 @@ return [
 
             'use-dynamic-landingpage' => 'dynamic Landing-Page',
             'use-static-landingpage'  => 'static Landing-Page',
-            'use-url'                 => 'url redirect',
-        ],
-
-        'landingpage-url' => [
-            'title'       => 'Landingpage URL',
-            'description' => 'All requests to the homepage will be redirected to this url. Only active when langingpage type is set to "url redirect"',
         ],
     ],
 

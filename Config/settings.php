@@ -9,16 +9,9 @@ return [
             'options'     => [
                 'dynamic' => 'dashboard::settings.landingpage.landingpage-type.use-dynamic-landingpage',
                 'static' => 'dashboard::settings.landingpage.landingpage-type.use-static-landingpage',
-                'url' => 'dashboard::settings.landingpage.landingpage-type.use-url'
             ],
             'default'     => 'static',
-        ],
-
-        'landingpage-url'  => [
-            'title'       => 'dashboard::settings.landingpage.landingpage-url.title',
-            'description' => 'dashboard::settings.landingpage.landingpage-url.description',
-            'view'        => 'text',
-        ],
+        ]
     ],
 
     'dashboard::settings.dashboard.title' => [
