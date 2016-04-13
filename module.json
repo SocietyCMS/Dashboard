@@ -2,7 +2,11 @@
   "name": "Dashboard",
   "alias": "dashboard",
   "description": "The module responsible for the admin dashboard page.",
-  "keywords": [],
+  "keywords": [
+    "core",
+    "module",
+    "societycms"
+  ],
   "version": "0.0.1",
   "active": 1,
   "order": 1,
@@ -10,7 +14,8 @@
     "Modules\\Dashboard\\Providers\\DashboardServiceProvider",
     "Modules\\Dashboard\\Providers\\RouteServiceProvider"
   ],
-  "aliases": {},
+  "aliases": {
+  },
   "files": [
     "start.php"
   ]
