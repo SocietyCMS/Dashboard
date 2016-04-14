@@ -7,13 +7,12 @@ use Modules\Setting\Facades\Settings;
 
 class PublicController extends PublicBaseController
 {
-
     /**
      * @return \Illuminate\View\View
      */
     public function index()
     {
-        switch(Settings::get('dashboard::landingpage-type')){
+        switch (Settings::get('dashboard::landingpage-type')) {
             case 'dynamic':
                 return view('dynamic-landing');
             case 'static':
