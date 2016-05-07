@@ -3,7 +3,7 @@
 namespace Modules\Dashboard\Http\Controllers\backend;
 
 use Modules\Core\Http\Controllers\AdminBaseController;
-use Modules\User\Repositories\Eloquent\ActivityRepository;
+use Modules\Core\Repositories\Eloquent\ActivityRepository;
 
 /**
  * Class DashboardController.
@@ -17,6 +17,7 @@ class DashboardController extends AdminBaseController
 
     /**
      * DashboardController constructor.
+     * @param ActivityRepository $activityRepository
      */
     public function __construct(ActivityRepository $activityRepository)
     {
