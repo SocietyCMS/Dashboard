@@ -28,7 +28,7 @@ class DashboardServiceProvider extends ServiceProvider
             function () {
                 $repository = new EloquentWidgetRepository(new Widget());
 
-                if (!config('app.cache')) {
+                if (! config('app.cache')) {
                     return $repository;
                 }
 
