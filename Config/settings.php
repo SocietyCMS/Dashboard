@@ -24,7 +24,6 @@ return [
         ],
         'welcome-subtitle' => [
             'title'       => 'dashboard::settings.dashboard.welcome-subtitle.title',
-            'description' => 'dashboard::settings.dashboard.welcome-subtitle.description',
             'view'        => 'text',
             'default'     => trans('dashboard::dashboard.welcome.subtitle'),
         ],
