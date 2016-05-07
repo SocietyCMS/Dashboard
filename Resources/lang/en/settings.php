@@ -18,11 +18,10 @@ return [
 
         'welcome-message'  => [
             'title'       => 'Welcome Message',
-            'description' => 'The BIG text message on the Dashboard',
+            'description' => 'You can use :user oder :firstname to insert the users name.',
         ],
         'welcome-subtitle' => [
             'title'       => 'Welcome Subtitle',
-            'description' => 'The not-so-big text message on the Dashboard',
         ],
     ],
 
