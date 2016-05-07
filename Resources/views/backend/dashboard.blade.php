@@ -17,7 +17,10 @@
             </div>
             <div class="twelve wide column">
                 <h1 class="ui header" style="font-size: 5rem;">
-                    {{ Setting::get('dashboard::welcome-message') }}
+                    {{ lang_replace(Setting::get('dashboard::welcome-message'), [
+                    'user' => $currentUser->present()->fullname,
+                    'firstname' => $currentUser->first_name,
+                    ]) }}
                     <div class="sub header" style="font-size: 1.242857rem;">
                         {{ Setting::get('dashboard::welcome-subtitle') }}
                     </div>
