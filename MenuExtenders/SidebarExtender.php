@@ -35,7 +35,7 @@ class SidebarExtender implements \Maatwebsite\Sidebar\SidebarExtender
             $group->weight(0);
             $group->hideHeading();
 
-            $group->item(trans('dashboard::dashboard.name'), function (Item $item) {
+            $group->item(trans('dashboard::module.title'), function (Item $item) {
                 $item->icon('fa fa-dashboard');
                 $item->route('dashboard.index');
                 $item->isActiveWhen(route('dashboard.index', null, false));
