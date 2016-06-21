@@ -3,24 +3,30 @@
 namespace Modules\Dashboard\Http\Controllers;
 
 use Modules\Core\Http\Controllers\PublicBaseController;
+use Modules\Core\Repositories\Eloquent\ActivityRepository;
 use Modules\Setting\Facades\Settings;
 
 class PublicController extends PublicBaseController
 {
     /**
+     * @var ActivityRepository
+     */
+    protected $activityRepository;
+
+    /**
+     * DashboardController constructor.
+     * @param ActivityRepository $activityRepository
+     */
+    public function __construct(ActivityRepository $activityRepository)
+    {
+        $this->activityRepository = $activityRepository;
+    }
+
+    /**
      * @return \Illuminate\View\View
      */
     public function index()
     {
-        switch (Settings::get('dashboard::landingpage-type')) {
-            case 'dynamic':
-                return view('dynamic-landing');
-            case 'static':
-                return view('static-landing');
-            case 'url':
-                return redirect(Settings::get('dashboard::landingpage-url'));
-        }
-
-        return view('static-landing');
+        return view('home');
     }
 }

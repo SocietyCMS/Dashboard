@@ -1,18 +1,6 @@
 <?php
 
 return [
-
-    'landingpage' => [
-        'title' => 'Landingpage',
-
-        'landingpage-type' => [
-            'title' => 'Specify the type of the Landingpage',
-
-            'use-dynamic-landingpage' => 'dynamic Landing-Page',
-            'use-static-landingpage'  => 'static Landing-Page',
-        ],
-    ],
-
     'dashboard' => [
         'title' => 'Dashboard',
 
