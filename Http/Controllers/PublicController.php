@@ -4,7 +4,6 @@ namespace Modules\Dashboard\Http\Controllers;
 
 use Modules\Core\Http\Controllers\PublicBaseController;
 use Modules\Core\Repositories\Eloquent\ActivityRepository;
-use Modules\Setting\Facades\Settings;
 
 class PublicController extends PublicBaseController
 {
